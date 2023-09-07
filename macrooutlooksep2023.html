@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - Macro View </title>
+        
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+       
+	</head>
+
+	<body>
+
+   
+
+		<div class="reveal">
+
+			<div class="slides">
+
+
+                <!-- Slides are separated by three dashes (quick 'n dirty regular expression) -->
+                <section data-markdown data-separator="^---$" data-separator-vertical="^\n--\n$">
+                    <script type="text/template">
+                        <!-- .slide: style="text-align: center;" -->
+
+                        
+                        <h2>Macroeconomic outlook</h2>
+
+                        
+
+                        <img class="plain" src= "assets/Logo_LxPartners.png"  style="height: 50px;background:trasparent" class="user-time">
+
+
+                        <h4> September 2023 </h4>
+                       
+                        ---
+
+                        <!-- .slide: style="text-align: left;" -->
+                       
+                        ### Global Perspective
+                       
+                        Rift between West and the Rest continues with possible future consequences on financial and economic stability:
+                    
+                        - The IMFC was not able to reach a common [communique](https://www.imf.org/en/News/Articles/2023/04/14/pr23120-chairs-statement-forty-seventh-meeting-of-the-imfc) in April 2023 reflecting the impact that security issues have on the global economy. 
+                        
+                        - US effort to diversify supply chains away from China to other asian countries faces challenges [article](https://www.piie.com/blogs/realtime-economics/us-led-effort-diversify-indo-pacific-supply-chains-away-china-runs-counter). 
+                       
+                        ---
+                        
+
+                        <!-- .slide: style="text-align: left;" -->
+                       
+                        ### The Inflation shock
+
+                        Inflation is returning slowly to target: 
+                        - US [faster](assets/fig188.html)
+                        - EA [slower](assets/fig1888.html)
+                        - however new supply shocks are possible: SA and Russia recent decision to curb production.
+
+                        ---
+                        
+
+                        <!-- .slide: style="text-align: left;" -->
+
+                        ### Portugal Outlook
+
+                    
+                        - Tourism had fully recovered from the Pandemic but inflation appears to have reduced demand [growth](assets/fig1.html),[unemployment](assets/fig2.html),[tourism](assets/fig7.html)
+                        - External position is slowly but continously improving strenghtening finacial resilience [NIIP](assets/fig18.html)
+                        - Political stability has **decreased**  and wage pressures have increased but so far budget appears to be balanced [debt to gdp](assets/fig3.html), [primary surplus](assets/fig4.html), [yields](assets/fig5.html)
+
+                        ---
+
+                        <!-- .slide: style="text-align: left;" -->
+                       
+                        ### Real estate market
+
+                        - increase in interest rates have depressed demand and decrease sales. 90% of mortgages are with variables interest rates. [interest rates](assets/fig10.html)  
+                        - so far permits (epected construction) is not declining [permits](assets/fig8.html)
+                        - and prices are keeping their strong positive dynamics [prices](assets/fig9.html) still defying gravity.
+
+                        ---
+
+                        <!-- .slide: style="text-align: left;" -->
+                       
+                        ### NPL Market
+                        
+                        Last 8 years the NPL ratio has come substantially down [NPL ratio](assets/fig11.html)
+
+                        | Sector     |   2023Q1   |   2022Q1   |Ratio 2023Q1|
+                        |:-----------|-----------:|-----------:|-----------:|
+                        | NFC        |  5,835,342 |  7,442,133 |        6.4 |
+                        | Households |  3,670,581 |  4,076,481 |        2.4 |  
+                        | Total      | 9,732,075  | 11,888,716 |        3.6 |
+                        
+
+                        ---
+
+                        <!-- .slide: style="text-align: left;" -->
+
+                        ### Loans in Portugal
+
+                        - The NPL ratio had decreased both though the numerator and denominator as loans to Households had increased, but now loans have stagnated [Loans HH](assets/fig12.html)
+                        - with Corporates the banks have been more cautious and lended only through the 6 billion euro guaranteed by the State and are now decreasing [Loans NFC](assets/fig13.html)
+                        
+                        
+                        ---
+
+                    
+
+                        <!-- .slide: style="text-align: left;" -->
+
+                        ### Conclusions
+
+                        - Inflation is coming down and if new supply shocks do not materialize should reach slowly its target 
+                        - We think NPL are likely to increase especially secured residential and unsecured consumer in 12 months.
+                        - Residential prices should decresase or at least stop increasing.
+                        - Loan demand by corporates should be sustained but underserviced by banks
+                        - Portugal presents sufficiently robust fundamentals.
+                    
+
+                       
+
+
+                    </script>
+                </section>
+
+            </div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+        <script src="js/pdfexport.js"></script>
+        <script src="plugin/markdown/markdown.js"></script>
+        <script src="plugin/highlight/highlight.js"></script>
+        <script src="plugin/notes/notes.js"></script>
+        <script src="plugin/math/math.js"></script>
+        <script src="plugin/search/search.js"></script>
+       
+     
+      
+		<script>
+
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+                center: true,
+                touch: true,
+               
+                math: {
+                    mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+                    config: 'TeX-AMS_HTML-full',
+                    // pass other options into `MathJax.Hub.Config()`
+                    TeX: { Macros: { RR: "{\\bf R}" } }
+                    },
+        
+               
+                
+
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes,RevealMath]
+			});
+
+		</script>
+
+	</body>
+</html>
